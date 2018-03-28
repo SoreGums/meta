@@ -37,6 +37,7 @@
 </ol>
 <h3 id="pick-a-ring-leader">1. Pick a ring leader!</h3>
 <p>There can only be one ring leader once this task begins. They are responsible for what happens, do what they say. If you disagree with their direction, that’s fine, become a spectator. If you feel they are going to break mainnet raise it polielty, clearly and factually; drop all emotions. The rest of the group need stop everything and wait for this to play out, offer support where appropriate. <strong>Ensuring mainnet remains 100% operational is paramount</strong>, take this seriously!</p>
+<p>The ring leader is also responsible for clearly stating the goals of the testnet event and writing them down so all involved are clear in what to monitor and look out for. Perhaps as part of the list below for IPs &amp; ports the top of the document could be a summary of the event and the goals put there as well as the date/time of the event.</p>
 <h3 id="create-a-space-pick-a-date-and-time">2.  Create a space, pick a date and time</h3>
 <p>A dedicated space needs to be created for this testnet event, and only those participating should have voice access. Allow spectators, always great to have community involvement, simply let them chat in the regular project channels. The ring leader needs clear communication lines to the other participants.</p>
 <p>Secondly pick a suitable date and time and prepare in advance for things to kick off then. Test scripts, provision floating IPs, startup a Google Cloud Shell session and load up all tools and scripts to be ready, gather API tokens, etc.</p>
@@ -60,7 +61,7 @@ Will probably be able to generate some nice graphics from the data which will ma
 <p>This is where the interesting content is. The solution presented below is built on DigitalOcean using Terraform &amp; Docker Swarm to control and provision all actions of the testnet. Sources used to compile script/docker images are at the end.</p>
 <p>One consideration is to give the testnet event a name, it is a big deal, go in and edit the code and brand the mining pool ui with the event name, create banners if that is your thing. Make it obvious wherever possible that the code being looked at is related to the testnet event. Create dedicated branches, maybe even setup a dedicated GitHub organisation with all the scripts and code in place to be stored forever for posterity. Maybe it will become content for a conference talk or local meetup…</p>
 <h3 id="terraform-digitalocean-droplets">Terraform DigitalOcean droplets</h3>
-<p>First things first, need to setup Terraform</p>
+<p>First things first, need to setup Terraform scripts. The great thing about Terraform is it is distributed as a single binary and should work on your platform of choice.</p>
 <blockquote>
 <p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
 </blockquote>
